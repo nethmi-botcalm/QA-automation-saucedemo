@@ -23,4 +23,19 @@ class ProductListingPage:
         select = Select(self.driver.find_element(*ProductListingLocators.sort_dropdown))
         select.select_by_visible_text(visible_text)
 
+    def click_on_product_by_name(self,product_name):
+        for el in self.driver.find_elements(*ProductListingLocators.product_names):
+            if el.text == product_name:
+                el.click()
+                return
+            raise Exception(f"Product named '{product_name}' not found")
+
+    def click_on_product_image_by_index(self, index = 0):
+        image = self.driver.find_elements(*ProductListingLocators.product_image)
+        if index >= len(image):
+            raise IndexError("Product Image index out of range")
+        image[index].click()
+
+
+
 
