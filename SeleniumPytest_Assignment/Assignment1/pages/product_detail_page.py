@@ -2,7 +2,7 @@ from locators.product_detail_locator import ProductDetailLocator
 
 class ProductDetailPage:
 
-    def __init__(self,driver):
+    def __init__(self, driver):
         self.driver = driver
 
     def get_product_title(self):
