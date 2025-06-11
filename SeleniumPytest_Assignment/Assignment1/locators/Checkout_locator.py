@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 class checkoutLocators:
-    first_name = (By.ID, "first_name")
+    first_name = (By.ID, "first-name")
     second_name = (By.ID, "last-name")
     postal_code = (By.ID, "postal-code")
     continue_btn = (By.ID, "continue")
