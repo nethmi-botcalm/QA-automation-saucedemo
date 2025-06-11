@@ -5,6 +5,7 @@ class checkoutLocators:
     second_name = (By.ID, "last-name")
     postal_code = (By.ID, "postal-code")
     continue_btn = (By.ID, "continue")
+    error_msg = (By.CLASS_NAME, "error-message-container")
 
     summary_product = (By.CLASS_NAME, "cart_item")
     product_name = (By.CLASS_NAME, "inventory_item_name")
