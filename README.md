@@ -8,12 +8,14 @@ This project is an automated testing suite built using Selenium WebDriver, Pytes
   Checkout workflow
 
 **Set Up the Environment**
+
 Prerequisites:
   Python 3.8+
   Google Chrome browser
   ChromeDriver (compatible with your Chrome version)
 
 **STEPS**
+
 1.Clone the Repository
   git clone https://github.com/your-username/QA-automation-saucedemo.git
   cd QA-automation-saucedemo
@@ -28,10 +30,12 @@ Prerequisites:
    pip install -r requirements.txt
 
  **Run the Tests**   
+ 
  1. pytest tests/
  2. Run a specific test: pytest tests/test_login.py
 
 **Generate the HTML Report**
+
 1.Install the pytest-html plugin:
     pip install pytest-html
     
