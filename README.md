@@ -34,8 +34,10 @@ Prerequisites:
 **Generate the HTML Report**
 1.Install the pytest-html plugin:
     pip install pytest-html
+    
 2.Run tests with the HTML report flag:
     pytest --html=reports/report.html --self-contained-html
+    
 3.To open report:
     Navigate to the reports folder
     Open report.html in any browser
