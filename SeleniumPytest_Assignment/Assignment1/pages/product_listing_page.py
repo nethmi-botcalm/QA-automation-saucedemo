@@ -1,6 +1,8 @@
 
 from locators.product_listing_locator import ProductListingLocators
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class ProductListingPage:
 
@@ -11,6 +13,9 @@ class ProductListingPage:
         return self.driver.find_elements(*ProductListingLocators.product_items)
 
     def get_product_name(self):
+        WebDriverWait(self.driver, 10).until(
+            EC.visibility_of_element_located(ProductListingLocators.product_names)
+        )
         return [el.text for el in self.driver.find_elements(*ProductListingLocators.product_names)]
 
     def get_product_prices(self):

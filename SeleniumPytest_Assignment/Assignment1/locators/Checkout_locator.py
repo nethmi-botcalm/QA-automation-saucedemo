@@ -12,7 +12,8 @@ class checkoutLocators:
     product_desc = (By.CLASS_NAME, "inventory_item_desc")
     product_price = (By.CLASS_NAME, "inventory_item_price")
     product_quantity = (By.CLASS_NAME, "cart_quantity")
-    item_total = (By.CLASS_NAME, "//*[@id='checkout_summary_container']/div/div[2]/div[6]")
+
+    item_total = (By.CLASS_NAME, "summary_subtotal_label")
     tax = (By.CLASS_NAME, "summary_tax_label")
     total = (By.CLASS_NAME, "summary_total_label")
     finish_button = (By.ID, "finish")
